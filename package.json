@@ -1,0 +1,27 @@
+{
+  "name": "e-neural-nlp",
+  "version": "4.0.0",
+  "description": "Server API",
+  "main": "e-neural-nlp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-Neural/e-neural-nlp.git"
+  },
+  "author": "alexandre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-Neural/e-neural-nlp/issues"
+  },
+  "homepage": "https://github.com/e-Neural/e-neural-nlp#readme",
+  "dependencies": {
+    "@nlpjs/basic": "^4.22.0",
+    "@nlpjs/directline-connector": "^4.22.0",
+    "@nlpjs/express-api-server": "^4.22.0",
+    "@nlpjs/lang-en": "^4.22.0",
+    "@nlpjs/lang-es": "^4.22.0",
+    "@nlpjs/lang-pt": "^4.22.0"
+  }
+}
