@@ -5,7 +5,10 @@
           "./corpus-en.json",
           "./corpus-es.json",
           "./corpus-pt.json"
-        ]
+        ],
+        "nlu": { 
+            "log": true
+        }
       },
       "console": {
         "debug": true

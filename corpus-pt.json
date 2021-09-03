@@ -1,6 +1,7 @@
 {
     "name": "Corpus PT",
     "locale": "pt-BR",
+    "contextData": "./heros.json",
     "data": [
       {
         "intent": "agent.whereami",
@@ -21,6 +22,35 @@
           "contar uma piada de Chuck Norris",
           "algum fato chuck norris"
         ]
+      },
+      {
+        "intent": "hero.realname",
+        "utterances": [
+          "qual é o nome real de @hero"
+        ],
+        "answers": [
+          "O nome real de {{ hero }} é {{ _data[entities.hero.option].realName }}"
+        ]
+      },
+      {
+        "intent": "hero.city",
+        "utterances": [
+          "onde vive o @hero?",
+          "qual é a cidade do @hero?"
+        ],
+        "answers": [
+          "{{ hero }} vive em {{ _data[entities.hero.option].city }}"
+        ]
       }
-    ]
+    ],
+    "entities": {
+      "hero": {
+        "options": {
+          "spiderman": ["spiderman", "spider-man"],
+          "ironman": ["ironman", "iron-man"],
+          "thor": ["thor"]
+        }
+      },
+      "email": "/\\b(\\w[-._\\w]*\\w@\\w[-._\\w]*\\w\\.\\w{2,3})\\b/gi"
+    }
   }
