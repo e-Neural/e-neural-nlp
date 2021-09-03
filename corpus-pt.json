@@ -17,9 +17,9 @@
         "intent": "joke.chucknorris",
         "utterances": [
           "diga-me um fato chuck norris",
-           "conte-me uma piada sobre Chuck Norris",
-           "contar uma piada de Chuck Norris",
-           "algum fato chuck norris"
+          "conte-me uma piada sobre Chuck Norris",
+          "contar uma piada de Chuck Norris",
+          "algum fato chuck norris"
         ]
       }
     ]
