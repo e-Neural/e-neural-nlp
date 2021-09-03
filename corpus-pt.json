@@ -1,0 +1,26 @@
+{
+    "name": "Corpus PT",
+    "locale": "pt-BR",
+    "data": [
+      {
+        "intent": "agent.whereami",
+        "utterances": [
+          "onde estou",
+          "de onde estou falando"
+        ],
+        "answers": [
+          { "answer": "você está falando no console, o aplicativo é {{ app }} o canal é {{ channel }}", "opts": "channel==='console'" },
+          { "answer": "você está falando diretamente, o aplicativo é {{ app }} o canal é {{ channel }}", "opts": "channel==='directline'" }
+        ]
+      },
+      {
+        "intent": "joke.chucknorris",
+        "utterances": [
+          "diga-me um fato chuck norris",
+           "conte-me uma piada sobre Chuck Norris",
+           "contar uma piada de Chuck Norris",
+           "algum fato chuck norris"
+        ]
+      }
+    ]
+  }

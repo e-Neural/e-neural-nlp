@@ -1,1 +1,5 @@
-require('@nlpjs/basic').dockStart();
+const { dockStart } = require('@nlpjs/basic');
+
+(async () => {
+  await dockStart();
+})();

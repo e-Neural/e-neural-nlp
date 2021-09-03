@@ -1,0 +1,24 @@
+{
+    "name": "Corpus 50",
+    "locale": "es-ES",
+    "data": [
+      {
+        "id": 1,
+        "intent": "support.about",
+        "utterances": [
+          "qué desarrolla tu compañía?",
+          "¿tu compañía tiene otros productos?",
+          "¿qué está creando tu compañía?",
+          "¿Qué está creando tu empresa?",
+          "¿Tiene tu empresa otras aplicaciones?"
+        ],
+        "tests": [
+          "¿qué más está desarrollando tu empresa?",
+          "¿tu compañía tiene algún otro producto?",
+          "¿qué otras cosas ha creado tu compañía?",
+          "¿Tu empresa tiene otra aplicación?",
+          "algún producto desarrollado por tu compañía"
+        ]
+      }
+    ]
+  }
