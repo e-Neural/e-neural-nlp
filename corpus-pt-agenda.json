@@ -1,0 +1,59 @@
+{
+    "name": "Corpus Agenda",
+    "locale": "pt-BR",
+    "contextData": "./agenda.json",
+    "data": [
+      {
+        "intent": "agent.welcome",
+        "utterances": [
+          "Oi",
+          "Olá"
+        ],
+        "answers": [
+          { "answer": "Sejá bem vindo eu sou o {{ app }}. Vamos inciar seu agendamento para que dia?", "opts": "" },
+          { "answer": "Eu sou o {{ app }}. Que dia vamos marcar sua agenda?", "opts": "" }
+        ]
+      },
+      {
+        "intent": "joke.chucknorris",
+        "utterances": [
+          "diga-me um fato chuck norris",
+          "conte-me uma piada sobre Chuck Norris",
+          "contar uma piada de Chuck Norris",
+          "algum fato chuck norris"
+        ]
+      },
+      {
+        "intent": "agenda.dia",
+        "utterances": [
+          "quero agendar para @dia",
+          "você tem para @dia",
+          "para @dia"
+        ],
+        "answers": [
+          "Ok, agoara escolha o horário para {{ agenda }} é {{ _data[entities.agenda.option].realName }}, agora informe o horario:"
+        ]
+      },
+      {
+        "intent": "agenda.hora",
+        "utterances": [
+          "você tem para @hora?",
+          "preciso que seja as @hora?",
+          "para @hora",
+          "as @hora"
+        ],
+        "answers": [
+          "Seu agendamento foi confirmado para {{ agenda }} às {{ hora }}"
+        ]
+      }
+    ],
+    "entities": {
+      "agenda": {
+        "options": {
+          "dia": ["segunda", "terça", "quarta", "quinta", "sexta", "sábado"],
+          "hora": ["08:00", "09:00", "10:00", "11:00", "12:00","13:00", "14:00", "15:00","16:00","17:00","18:00"],
+          "unidade": ["redentora", "plaza shopping"]
+        }
+      }
+    }
+  }

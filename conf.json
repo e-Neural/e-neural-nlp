@@ -4,7 +4,8 @@
         "corpora": [
           "./corpus-en.json",
           "./corpus-es.json",
-          "./corpus-pt.json"
+          "./corpus-pt.json",
+          "./corpus-pt-agenda.json"
         ],
         "nlu": { 
             "log": true
